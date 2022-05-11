@@ -6,6 +6,7 @@ import 'antd/dist/antd.css';
 function PersonalityTest({ Component, pageProps }: AppProps) {
   return (
     <AppLayout>
+      {/* eslint-disable-next-line react/jsx-props-no-spreading */}
       <Component {...pageProps} />
     </AppLayout>
   );

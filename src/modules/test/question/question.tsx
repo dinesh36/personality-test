@@ -7,7 +7,8 @@ const Question = () => {
   const [selectedAnswerId, setSelectedAnswerId] = useState(2);
   const renderQuestionTitle = () => (
     <div className={styles.questionTitle}>
-      You’re really busy at work and a colleague is telling you their life story and personal woes. You:
+      You’re really busy at work and a colleague is
+      telling you their life story and personal woes. You:
     </div>
   );
 
@@ -21,6 +22,8 @@ const Question = () => {
     return (
       <div className={styles.answerOptions}>
         {answers.map((answer) => (
+          // eslint-disable-next-line max-len
+          // eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions
           <div
             onClick={() => setSelectedAnswerId(answer.id)}
             className={`${styles.answerOption} ${selectedAnswerId === answer.id ? styles.selected : ''}`}
@@ -32,7 +35,7 @@ const Question = () => {
               {answer.text}
             </span>
             {selectedAnswerId === answer.id
-              ? <img src="images/test/selected-icon.svg" /> : null}
+              ? <img src="images/test/selected-icon.svg" alt="selected icon" /> : null}
           </div>
         ))}
       </div>
@@ -41,7 +44,7 @@ const Question = () => {
 
   const renderNextPreviousButtons = () => (
     <div className={styles.buttonContainer}>
-      <Button type="secondary">Previous</Button>
+      <Button type="default">Previous</Button>
       <Button type="primary">Next</Button>
     </div>
   );

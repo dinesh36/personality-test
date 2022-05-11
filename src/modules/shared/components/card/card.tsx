@@ -9,4 +9,8 @@ function Card({ children, className }: {children: React.ReactNode, className?: s
   );
 }
 
+Card.defaultProps = {
+  className: '',
+};
+
 export default Card;

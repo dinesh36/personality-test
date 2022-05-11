@@ -15,7 +15,7 @@ const extrovertResult = {
 const Result = () => {
   const [result, setResult] = useState(introvertResult);
 
-  const renderResultImage = () => <img src={`images/result/${result.title}.png`} className={styles.resultText} />;
+  const renderResultImage = () => <img src={`images/result/${result.title}.png`} className={styles.resultText} alt={result.title} />;
 
   const renderResultText = () => (
     <div className={styles.resultText}>
