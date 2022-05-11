@@ -2,7 +2,7 @@ import { cloneDeep } from 'lodash';
 import LAYOUT_ACTIONS from './layout.action-types';
 
 const initialState = {
-  title: true,
+  title: 'Check your personality',
 };
 
 export default (state = cloneDeep(initialState),

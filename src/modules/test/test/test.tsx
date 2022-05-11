@@ -5,7 +5,7 @@ import { updateTitle } from '../../../store/store/layout/layout.action';
 
 const Test = () => {
   const dispatch = useDispatch();
-  dispatch(updateTitle('Check your personality.'));
+  dispatch(updateTitle('Check your personality'));
 
   return (
     <div className={styles.test}>

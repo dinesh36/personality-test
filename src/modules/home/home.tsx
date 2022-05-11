@@ -7,7 +7,7 @@ import { updateTitle } from '../../store/store/layout/layout.action';
 
 function Home() {
   const dispatch = useDispatch();
-  dispatch(updateTitle('Check your personality.'));
+  dispatch(updateTitle('Check your personality'));
 
   return (
     <div className={styles.home}>
