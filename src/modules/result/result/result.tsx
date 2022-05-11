@@ -7,12 +7,14 @@ const introvertResult = {
   text: 'You feel that living alone is to live happily, and you prefer hiding in a crowd rather than standing out in one. You are perpetually tormented by the idea of doing things wrong, not understanding or not being alert enough or intelligent enough to do what others expect of you. You lack in self-confidence and you seem to believe that others are better than you. While in a conversation, for example, you would be more likely to go.',
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const extrovertResult = {
   title: 'extrovert',
   text: 'Extroverts tend to be quite outgoing and talkative. They enjoy spending time with other people, and feel energized in social situations. Oftentimes, extroverts like being the focus of attention. As an extrovert, people probably describe you as friendly and outgoing.',
 };
 
 const Result = () => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [result, setResult] = useState(introvertResult);
 
   const renderResultImage = () => <img src={`images/result/${result.title}.png`} className={styles.resultText} alt={result.title} />;
