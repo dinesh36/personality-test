@@ -1,15 +1,15 @@
 # Personality Test
 
+## [Demo](https://personality-test.raimp.com)
+
 ## run application locally
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Screen Shots
+## Application Screen Shots
 ### Home
 <img src="screen-shots/home.png" width="400">
 
